@@ -1,0 +1,67 @@
+/* Importar fuente personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+/* Estilo general del cuerpo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo de la hoja */
+.paper {
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(#fef1c3 98%, #e0b8b8 98%);
+  background-size: 100% 40px; /* Altura de las líneas */
+  background-position: 0 1em; /* Ajustar inicio de las líneas */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 2em 1.5em; /* Espaciado interno */
+  font-family: 'Shadows Into Light Two', cursive;
+  position: relative;
+}
+
+/* Encabezado */
+.paper h1 {
+  margin: 0;
+  margin-bottom: 1em;
+  text-align: center;
+  color: #b22222;
+  font-size: 1.5em;
+}
+
+/* Lista de tareas */
+.paper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.paper li {
+  position: relative;
+  margin-bottom: 1em; /* Espaciado entre ítems */
+  padding-left: 1.5em;
+  line-height: 40px; /* Altura para alinearse con las líneas */
+}
+
+/* Viñetas personalizadas */
+.paper li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #b22222;
+  font-size: 1.2em;
+}
+
+/* Ajustar la primera viñeta para empezar desde la segunda línea */
+.paper li:first-child {
+  margin-top: 40px; /* Mover la primera viñeta hacia abajo */
+}
